@@ -11,20 +11,6 @@ AFirstPersonCharacter::AFirstPersonCharacter()
 
 }
 
-// Called when the game starts or when spawned
-void AFirstPersonCharacter::BeginPlay()
-{
-	Super::BeginPlay();
-	
-}
-
-// Called every frame
-void AFirstPersonCharacter::Tick(float DeltaTime)
-{
-	Super::Tick(DeltaTime);
-
-}
-
 // Called to bind functionality to input
 void AFirstPersonCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
