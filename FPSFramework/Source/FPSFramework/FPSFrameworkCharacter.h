@@ -44,6 +44,10 @@ class AFPSFrameworkCharacter : public ACharacter
 	/** Look Input Action */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
 	class UInputAction* LookAction;
+
+	/** Sprint Input Action */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
+	class UInputAction* SprintAction;
 	
 public:
 	AFPSFrameworkCharacter();
@@ -54,6 +58,10 @@ protected:
 
 	/** Called for looking input */
 	void Look(const FInputActionValue& Value);
+
+	/** Called for sprint input */
+	void StartSprinting();
+	void StopSprinting();
 
 protected:
 	// APawn interface
